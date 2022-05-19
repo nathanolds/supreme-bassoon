@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+a{
+    color: white;
+}
+
+header{
+    background-image: url(./img/bg-header_1.jpg);
+    padding: 8vw;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+header div{
+    width: 50%;
+}
+
+h1{
+    font-size: 5rem;
+    padding-bottom: 2vw;
+}
+
+header h2{
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+section h2{
+    
+}
+
+.facts{
+    padding: 8vw;
+
+}
