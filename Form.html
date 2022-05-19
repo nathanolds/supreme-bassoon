@@ -27,8 +27,10 @@
 <!--Research links-->
 
 
-    <form>
-        <div class="mb-3">
+    <form class="container">
+    
+    <div class="row g-2">
+        <div class="col-md">
         <!--email and password in form-->
           <label for="exampleInputEmail1" class="form-label">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -39,7 +41,10 @@
           <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
         <!--end of email and password section-->
-
+        </div>
+    </div>
+        
+        <div class="col-md">
         <!--dropdown menu section-->
         <select class="form-select" aria-label="Default select example">
             <option selected>How many decisions does VAR make a game on average?</option>
@@ -48,19 +53,27 @@
             <option value="3">Three</option>
           </select>
         <!--dropdown section-->
+        </div>
+    </div>
 
+        <div class="col-md"
         <!--text area section-->
         <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
             <label for="floatingTextarea">What is your opinion of VAR?</label>
           </div>
         <!--text area section-->
+        </div>
+    </div>
 
-        <div class="mb-3 form-check">
+    <div class="row g-2 padding-top: 10">
+        <div class="col-md" form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
       </form>
 </body>
 </html>
