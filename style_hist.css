@@ -5,8 +5,8 @@ a{
 }
 
 header{
-    background-image: url(./img/bg-header_1.jpg);
-    padding: 8vw;
+    background-image: url(./img_hist/bg-header_1.jpg);
+    padding: 10vw;
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -31,10 +31,9 @@ header h2{
 }
 
 section h2{
-    
+    font-size: 3.5rem;
 }
 
 .facts{
     padding: 8vw;
-
 }
