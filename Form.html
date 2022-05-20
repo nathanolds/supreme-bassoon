@@ -12,6 +12,65 @@
     <link rel="stylesheet" href="Form.css">
 </head>
 
+<!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Left</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="//codeply.com">Codeply</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#">Navbar 2</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Right</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">IFAB</a> -->
+          <a class="navbar-brand" href="#">
+              <!-- LOGO IMAGE -->
+              <img id="logo-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTUuNjggNDAuNDQiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMmMzMTM4O308L3N0eWxlPjwvZGVmcz48ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIj48ZyBpZD0iTWVudXMiPjxnIGlkPSJsb2dvX2Z1bGwiPjxnIGlkPSJMb2dvIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik01NS4wOCw3LjkxYTI0LjM4LDI0LjM4LDAsMCwwLDEtMy41M2MwLTIuMzgtMi4yMS0yLjQ0LTQuNTktMi44TDUyLC4yNkg2Mi43MnM5LjQ5LDI2LjMxLDEyLjcxLDM1LjA1YzEuMDcsMi45MywzLjg3LDUuMTMsNS44MSw1LjEzSDc1LjQ2Yy00LjQ2LDAtNS44LTMuOTQtNi4yOC01LjI2QzY4LjU0LDMzLjM5LDY2LjYsMjgsNjYuNiwyOEg1MS4zOEw0Ni45LDQwLjQ0SDQzLjJaTTUyLjM5LDI1LjIySDY1LjU4TDU4Ljc4LDcuNzlaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNODAuNTQsOC4zOGMwLTUuOTEtLjExLTUuOTEtNS42Ny02LjhMNzQuMzguMjZIOTIuNmM2Ljg3LDAsMTQuMTUsMS42MiwxNC4xNSw5LjY3LDAsNS44NS00LjI0LDguMTItNy4xNiw5LjA4di4xMmM0LjIzLjgzLDkuMTksMyw5LjE5LDEwLjYyLDAsMTAuNjktMTIuMTIsMTAuNjktMTcsMTAuNjlIODcuMTFjLTYuNiwwLTYuNTctNC4xMi02LjU3LTUuMjVabTYuNTcsOS40M2g0YzUuMTMsMCw5LjA3LTEuNjcsOS4wNy03LjU4LDAtNS4zNy0zLTcuMTYtOC40Ny03LjE2LTMuNTksMC00LjYuMTgtNC42LDMuMVptMCwxNy4zN2MwLDIuNDUsMi40NSwyLjQ1LDUuNzMsMi40NSw2LjU3LDAsOS4zNy0yLjkyLDkuMzctOSwwLTUuOTEtNC40MS04LTkuNjctOEg4Ny4xMVoiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNywuMjZsLS40OSwxLjMyYzUuNDkuODksNS42Ny44OSw1LjY3LDYuOHYyNi44YzAsMS4xNCwwLDUuMjIsNi4zMyw1LjI2aDUuMzFsLjU1LTEuNWgtLjU5Yy00LjE0LDAtNS0uOTEtNS01LjU1VjIwLjg2SDQxbDEtMi44MUgyOC43NlY2LjE3YzAtMi44Ni43Ny0zLjEsMy43Ni0zLjFoNC42NWMzLjg4LDAsNi40NSwxLjI1LDYuNDUsNmgxLjY3TDQ4LjUxLjI2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTS40Ny45MywwLDIuMjljNS43OS43OCw2LC44NCw2LDUuODV2MzIuM2guMTZjNi40MSwwLDYuNDEtNC4xMiw2LjQxLTUuMjZWMS41OEwxMy4xMiwwWiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTExMi4yNiw2LjQ5YTIuNiwyLjYsMCwwLDAsMS0uMiwyLjUsMi41LDAsMCwwLC44Mi0uNTgsMi41OCwyLjU4LDAsMCwwLC41NS0uODcsMi44OSwyLjg5LDAsMCwwLC4yMS0xLjExLDIuODcsMi44NywwLDAsMC0uMjEtMS4xLDIuNTgsMi41OCwwLDAsMC0uNTUtLjg3LDIuNSwyLjUsMCwwLDAtLjgyLS41OCwyLjYsMi42LDAsMCwwLTEtLjIsMi42NCwyLjY0LDAsMCwwLTEsLjIsMi42MSwyLjYxLDAsMCwwLS44Mi41OCwyLjc1LDIuNzUsMCwwLDAtLjU1Ljg3LDMuMTUsMy4xNSwwLDAsMCwwLDIuMjEsMi43NSwyLjc1LDAsMCwwLC41NS44NywyLjYxLDIuNjEsMCwwLDAsLjgyLjU4LDIuNjQsMi42NCwwLDAsMCwxLC4ybTAsLjY3YTMuMzQsMy4zNCwwLDAsMS0xLjMzLS4yOCwzLjUsMy41LDAsMCwxLTEuODItMS44MSwzLjM0LDMuMzQsMCwwLDEtLjI3LTEuMzQsMy4zMywzLjMzLDAsMCwxLC4yNy0xLjMzQTMuNSwzLjUsMCwwLDEsMTEwLjkzLjU5YTMuMzMsMy4zMywwLDAsMSwxLjMzLS4yNywzLjI5LDMuMjksMCwwLDEsMS4zMy4yNywzLjQyLDMuNDIsMCwwLDEsMS4wOS43MywzLjQ5LDMuNDksMCwwLDEsLjczLDEuMDgsMy4zMywzLjMzLDAsMCwxLC4yNywxLjMzLDMuMzQsMy4zNCwwLDAsMS0uMjcsMS4zNCwzLjQ5LDMuNDksMCwwLDEtLjczLDEuMDgsMy40MiwzLjQyLDAsMCwxLTEuMDkuNzMsMy4zLDMuMywwLDAsMS0xLjMzLjI4Ii8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTEyLjY2LDIuOTJhLjY0LjY0LDAsMCwxLS42Ni42NGgtLjM2VjIuMzNIMTEyYS41OC41OCwwLDAsMSwuNjYuNTltMS4xOCwyLjc1YTkuNTIsOS41MiwwLDAsMC0xLjE4LTEuNzloMGExLjEyLDEuMTIsMCwwLDAsLjczLTFjMC0uNjEtLjM5LTEuMTItMS40MS0xLjEyaC0xLjA3djRoLjczVjQuMTFIMTEyYy4xNSwwLC40My41NCwxLDEuNTZaIi8+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg==" width="90" alt="" class="d-inline-block align-middle mr-2">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a id="nav-pad" class="nav-link active text-end py-4" href="home.html">Home</a>
+              <a id="nav-pad" class="nav-link text-end py-4" href="Cards.html">Misconduct</a>
+              <a id="nav-pad" class="nav-link text-end py-4" href="Form.html">VAR</a>
+              <a id="nav-pad" class="nav-link text-end py-4" href="history.html">History</a>
+            </div>
+          </div>
+        </div>
+      </nav> 
+
 <body class="bg-secondary">
 
     <h2>The thing eveyone hates</h2>

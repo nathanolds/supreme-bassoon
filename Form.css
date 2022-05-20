@@ -52,4 +52,31 @@ h1 {
     text-decoration: none;
     text-transform: uppercase;
   }
+
+  .about {
+    text-align: center;
+}
+
+#font {
+    font-family: 'Outfit', sans-serif;
+}
+
+#logo-img {
+    padding-left: 20px;
+}
+
+#nav-pad {
+    padding-left: 50px;
+
+}
+
+.middle {
+    text-align: center;
+} 
   
+*{
+    font-family: 'Outfit', sans-serif;
+}
+a{
+    color:white;
+}
